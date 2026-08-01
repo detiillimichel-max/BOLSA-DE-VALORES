@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bolsa de Valores - Jogo Digital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>BOLSA <span>DE VALORES</span></h1>
+  <div class="subtitle">O clássico jogo da bolsa - versão digital</div>
+</header>
+
+<div class="main">
+  <div class="left">
+    <div id="board" class="board"></div>
+    <div class="controls">
+      <button id="rollBtn">🎲 Lançar Dado</button>
+      <div id="diceResult">-</div>
+      <div id="turnInfo"></div>
+    </div>
+    <div id="log" class="log"></div>
+  </div>
+  <div class="right">
+    <section class="panel">
+      <h2>📈 Cotação da Bolsa</h2>
+      <div id="cotacao"></div>
+    </section>
+    <section class="panel">
+      <h2>👥 Jogadores</h2>
+      <div id="players"></div>
+      <div class="setup">
+        <label>Jogadores:</label>
+        <select id="numPlayers"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option></select>
+        <button id="startBtn">Novo Jogo</button>
+      </div>
+    </section>
+    <section class="panel bolsa-caixa">
+      <h2>🏦 Bolsa (Banco)</h2>
+      <div>Dinheiro em caixa: <strong id="bolsaDinheiro">R$ 645</strong></div>
+      <small>3x R$5 + 3x R$10 + 4x R$50 + 4x R$100</small>
+    </section>
+  </div>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <div id="modalActions"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
