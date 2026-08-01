@@ -1,5 +1,5 @@
 Bolsa de Valores - Jogo Digital
-Recriação digital do clássico jogo de tabuleiro Bolsa de Valores baseado nas fotos das instruções originais.
+Recriação digital do clássico jogo de tabuleiro Bolsa de Valores baseado  instruções originais.
 
 📜 Regras Implementadas (fiel ao manual)
 INÍCIO
